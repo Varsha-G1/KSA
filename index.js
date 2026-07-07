@@ -72,7 +72,7 @@ function transitionToPortal() {
   welcome.style.opacity = '0';
   setTimeout(() => {
     welcome.style.display = 'none';
-    portal.style.display = 'grid';
+    portal.style.display = 'block';
     portal.style.opacity = '1';
   }, 500);
 }
@@ -94,7 +94,7 @@ function exitToPortal() {
   const dashboard = document.getElementById('main-dashboard');
   
   dashboard.classList.add('hidden');
-  portal.style.display = 'grid';
+  portal.style.display = 'block';
   setTimeout(() => {
     portal.style.opacity = '1';
   }, 50);

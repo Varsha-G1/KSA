@@ -69,106 +69,155 @@
 
     <!-- State 2: Portal / Selection View -->
     <div id="portal-screen" class="portal-screen">
-      <div class="portal-left">
-        <div class="portal-title-area">
-          <svg width="60" height="60" viewBox="0 0 200 200" fill="none">
-            <circle cx="100" cy="100" r="90" stroke="#00FFCC" stroke-width="2" fill="none"/>
-            <path d="M100 45L145 135H55L100 45Z" fill="#00FFCC" opacity="0.3"/>
+      <!-- Top multi-stop gradient bar (5124x80) -->
+      <div class="portal-top-gradient-bar"></div>
+      <!-- Thin separator bar (5124x12) -->
+      <div class="portal-top-separator-bar"></div>
+
+      <!-- Left Context Panel (729x1440) -->
+      <div class="portal-context-panel">
+        <!-- Figma Mask and graphics for Context panel -->
+        <div class="portal-context-shapes">
+          <svg style="position:absolute; left:-297px; top:-221px; overflow:hidden;" width="898" height="941" viewBox="0 0 898 941" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_104_2986)">
+              <mask id="mask0_104_2986" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-1" y="7" width="1403" height="1376">
+                <path d="M1401.04 735.691L559.714 7.90161L-0.00037531 654.935L841.329 1382.73L1401.04 735.691Z" fill="white"/>
+              </mask>
+              <g mask="url(#mask0_104_2986)">
+                <path d="M570.679 -23.482L-30.3086 671.263L229.114 895.676L491.602 672.081L366.194 500.341L746.186 85.846L570.679 -23.482Z" fill="url(#paint0_linear_104_2986)"/>
+              </g>
+              <mask id="mask1_104_2986" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-1" y="7" width="1403" height="1376">
+                <path d="M1401.04 735.691L559.714 7.90161L-0.00037531 654.935L841.329 1382.73L1401.04 735.691Z" fill="white"/>
+              </mask>
+              <g mask="url(#mask1_104_2986)">
+                <path d="M211.509 751.007C211.509 751.007 149.308 702.019 113.285 679.942C77.2619 657.864 231.606 506.749 343.242 395.903C454.878 285.057 967.332 -245.898 1302.73 -650.686L1418.01 -550.963C1343.78 -435.771 827.959 149.051 211.509 751.007Z" fill="#016C36"/>
+              </g>
+              <mask id="mask2_104_2986" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-1" y="7" width="1403" height="1376">
+                <path d="M1401.04 735.691L559.714 7.90161L-0.00037531 654.935L841.329 1382.73L1401.04 735.691Z" fill="white"/>
+              </mask>
+              <g mask="url(#mask2_104_2986)">
+                <path opacity="0.5" d="M211.509 751.007C211.509 751.007 149.308 702.019 113.285 679.942C77.2619 657.864 231.606 506.749 343.242 395.903C454.878 285.057 967.332 -245.898 1302.73 -650.686L1418.01 -550.963C1343.78 -435.771 827.959 149.051 211.509 751.007Z" fill="url(#paint1_linear_104_2986)"/>
+              </g>
+              <mask id="mask3_104_2986" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-1" y="7" width="1403" height="1376">
+                <path d="M1401.04 735.691L559.714 7.90161L-0.00037531 654.935L841.329 1382.73L1401.04 735.691Z" fill="white"/>
+              </mask>
+              <g mask="url(#mask3_104_2986)">
+                <path d="M547.156 405.998C547.156 405.998 647.864 461.546 648.3 479.627C649.99 549.786 502.738 692.843 391.102 803.689C279.466 914.535 -192.379 1391.97 -546.291 1788.39L-642.565 1705.11C-642.238 1659.97 201.317 816.274 547.156 405.998Z" fill="#016C36"/>
+              </g>
+              <path opacity="0.5" d="M547.156 405.998C547.156 405.998 647.864 461.546 648.3 479.627C649.99 549.786 502.738 692.843 391.102 803.689C279.466 914.535 -192.379 1391.97 -546.291 1788.39L-642.565 1705.11C-642.238 1659.97 201.317 816.274 547.156 405.998Z" fill="url(#paint2_linear_104_2986)"/>
+              <path d="M113.739 678.629L258.129 783.095C313.023 830.58 612.398 405.988 648.754 478.315C648.754 478.315 650.574 470.238 620.388 449.235C590.202 428.233 496.62 364.88 496.62 364.88C473.541 348.89 447.403 366.749 420.289 392.528C343.372 465.657 181.509 666.853 113.739 678.629Z" fill="#016C36"/>
+              <path opacity="0.4" d="M113.805 678.642L258.196 783.108C313.089 830.593 612.464 406.001 648.821 478.328C648.821 478.328 650.64 470.251 620.454 449.248C590.268 428.245 496.687 364.893 496.687 364.893C473.608 348.902 447.469 366.762 420.355 392.541C343.438 465.669 181.575 666.865 113.805 678.642Z" fill="url(#paint3_linear_104_2986)"/>
+            </g>
+            <defs>
+              <linearGradient id="paint0_linear_104_2986" x1="371.562" y1="390.339" x2="289.393" y2="319.259" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#004722"/>
+                <stop offset="0.6216" stop-color="#016230"/>
+                <stop offset="1" stop-color="#016C36"/>
+              </linearGradient>
+              <linearGradient id="paint1_linear_104_2986" x1="1342.94" y1="-615.903" x2="157.985" y2="753.911" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="0.2097" stop-color="#FDFDFD"/>
+                <stop offset="0.3311" stop-color="#F4F4F4"/>
+                <stop offset="0.4301" stop-color="#E6E6E6"/>
+                <stop offset="0.5169" stop-color="#D2D2D2"/>
+                <stop offset="0.5958" stop-color="#B8B8B8"/>
+                <stop offset="0.669" stop-color="#999999"/>
+                <stop offset="0.7364" stop-color="#747474"/>
+                <stop offset="0.8003" stop-color="#494949"/>
+                <stop offset="1"/>
+              </linearGradient>
+              <linearGradient id="paint2_linear_104_2986" x1="594.35" y1="427.567" x2="-295.805" y2="1456.59" gradientUnits="userSpaceOnUse">
+                <stop/>
+                <stop offset="0.4261" stop-color="#494949"/>
+                <stop offset="0.627" stop-color="#868686"/>
+                <stop offset="1" stop-color="white"/>
+              </linearGradient>
+              <linearGradient id="paint3_linear_104_2986" x1="633.572" y1="286.872" x2="126.075" y2="873.541" gradientUnits="userSpaceOnUse">
+                <stop/>
+                <stop offset="0.4932" stop-color="white"/>
+                <stop offset="1"/>
+              </linearGradient>
+              <clipPath id="clip0_104_2986">
+                <rect width="436.984" height="865.979" fill="white" transform="translate(566.55) rotate(40.8614)"/>
+              </clipPath>
+            </defs>
           </svg>
-          <div style="font-family:var(--font-display); font-weight:800; font-size:2.2rem; letter-spacing:1px;">SAUDI 2034</div>
         </div>
-        <div class="portal-main-title">National PMO<br>Control Panel</div>
-        <div class="portal-desc">
-          Welcome to the Executive Operating System for Saudi Arabia's FIFA World Cup 2034 delivery program. Explore different strategic lenses, track milestones, monitor delivery readiness, and manage risks across ministries and host cities.
+
+        <div class="portal-context-s34">SAUDI 34</div>
+        <div class="portal-context-title">PMO<br>Control Panel</div>
+        
+        <div class="portal-context-info-box">
+          <div class="portal-context-info-text">
+            <strong>PMO control panel</strong> gives you a 360 degree view of your readiness for FIFA 2034 across all themes and sectors.<br><br>
+            Explore a series of data themes across portfolios, projects and performance for your vision.
+          </div>
         </div>
       </div>
 
-      <div class="portal-cards-grid">
-        <!-- Map View Card -->
-        <div class="portal-card" onclick="enterDashboard('map')">
-          <div class="portal-card-num">01</div>
-          <div class="portal-card-main">
-            <div class="portal-card-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a3aed0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
-                <line x1="8" y1="2" x2="8" y2="18"></line>
-                <line x1="16" y1="6" x2="16" y2="22"></line>
-              </svg>
-            </div>
-            <div class="portal-card-title">MAP VIEW</div>
-            <div class="portal-card-status">READY</div>
+      <!-- Right Area Content -->
+      <!-- Center Bid Logo and Title -->
+      <div class="portal-center-header">
+        <img class="portal-bid-logo" src="https://api.builder.io/api/v1/image/assets/TEMP/964f831bbf709e2598a1932a2e35d25d7b02eaac?width=406" alt="Saudi 2034 Bid Logo">
+        <div class="portal-control-room-title">PMO CONTROL ROOM</div>
+      </div>
+
+      <!-- Headers: Context and Selection View -->
+      <div class="portal-header-titles">
+        <div class="portal-hdr-context">CONTEXT</div>
+        <div class="portal-hdr-selection">Selection View</div>
+      </div>
+
+      <!-- Horizontal Cards Row -->
+      <div class="portal-cards-row">
+        <!-- Card 1: Map View -->
+        <div class="portal-figma-card" onclick="enterDashboard('map')">
+          <div class="portal-figma-card-inner">
+            <img class="portal-figma-card-img" src="https://api.builder.io/api/v1/image/assets/TEMP/9a89c5f64581e5743f1804cdc0e55f67f488c232?width=1000" alt="Map View">
           </div>
-          <div></div>
+          <div class="portal-figma-card-label">
+            <span class="lbl-bold">Map </span><span class="lbl-light">view</span>
+          </div>
         </div>
 
-        <!-- Portfolio View Card -->
-        <div class="portal-card" onclick="enterDashboard('portfolio')">
-          <div class="portal-card-num">02</div>
-          <div class="portal-card-main">
-            <div class="portal-card-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a3aed0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
-              </svg>
-            </div>
-            <div class="portal-card-title">PORTFOLIO</div>
-            <div class="portal-card-status">READY</div>
+        <!-- Card 2: Portfolio -->
+        <div class="portal-figma-card" onclick="enterDashboard('portfolio')">
+          <div class="portal-figma-card-inner">
+            <img class="portal-figma-card-img" src="https://api.builder.io/api/v1/image/assets/TEMP/3fc04a69e36e777be76158a0275003cdbccbdeb8?width=1184" alt="Portfolio View">
           </div>
-          <div></div>
+          <div class="portal-figma-card-label">
+            <span class="lbl-bold">Portfolio </span><span class="lbl-light">view</span>
+          </div>
         </div>
 
-        <!-- Critical Path Card -->
-        <div class="portal-card locked">
-          <div class="portal-card-num">03</div>
-          <div class="portal-card-main">
-            <div class="portal-card-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a3aed0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="6" y1="3" x2="6" y2="15"></line>
-                <circle cx="18" cy="6" r="3"></circle>
-                <circle cx="6" cy="18" r="3"></circle>
-                <path d="M18 9a9 9 0 0 1-9 9"></path>
-              </svg>
-            </div>
-            <div class="portal-card-title" style="font-size:1.4rem;">CRITICAL PATH</div>
-            <div class="portal-card-status">LOCKED</div>
+        <!-- Card 3: Critical Path -->
+        <div class="portal-figma-card locked">
+          <div class="portal-figma-card-inner">
+            <img class="portal-figma-card-img" src="https://api.builder.io/api/v1/image/assets/TEMP/bbefb4c2206f0746e3faedb9198a7a70e5ed4361?width=1184" alt="Critical Path View">
           </div>
-          <div></div>
+          <div class="portal-figma-card-label">
+            <span class="lbl-bold">Critical </span><span class="lbl-light">path</span>
+          </div>
         </div>
 
-        <!-- Collaborators Card -->
-        <div class="portal-card locked">
-          <div class="portal-card-num">04</div>
-          <div class="portal-card-main">
-            <div class="portal-card-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a3aed0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
-            </div>
-            <div class="portal-card-title" style="font-size:1.4rem;">COLLABORATOR</div>
-            <div class="portal-card-status">LOCKED</div>
+        <!-- Card 4: Collaborator -->
+        <div class="portal-figma-card locked">
+          <div class="portal-figma-card-inner">
+            <img class="portal-figma-card-img" src="https://api.builder.io/api/v1/image/assets/TEMP/2b0d34cf50b5558ecf0c265d820e7790c1e7747e?width=1184" alt="Collaborator View">
           </div>
-          <div></div>
+          <div class="portal-figma-card-label">
+            <span class="lbl-bold">Collaborator </span><span class="lbl-light">view</span>
+          </div>
         </div>
 
-        <!-- Insights Card -->
-        <div class="portal-card locked">
-          <div class="portal-card-num">05</div>
-          <div class="portal-card-main">
-            <div class="portal-card-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a3aed0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="18" y1="20" x2="18" y2="10"></line>
-                <line x1="12" y1="20" x2="12" y2="4"></line>
-                <line x1="6" y1="20" x2="6" y2="14"></line>
-              </svg>
-            </div>
-            <div class="portal-card-title">INSIGHTS</div>
-            <div class="portal-card-status">LOCKED</div>
+        <!-- Card 5: Insights -->
+        <div class="portal-figma-card locked">
+          <div class="portal-figma-card-inner">
+            <img class="portal-figma-card-img" src="https://api.builder.io/api/v1/image/assets/TEMP/86045af2f473a0126735accb329dbf6d76266fc4?width=1184" alt="Insights View">
           </div>
-          <div></div>
+          <div class="portal-figma-card-label">
+            <span class="lbl-bold">Insights </span><span class="lbl-light">view</span>
+          </div>
         </div>
       </div>
     </div>
